@@ -38,23 +38,42 @@
       border-radius: 8px;
       font-weight: bold;
     }
-<section>
-  <h2>Documenti legali</h2>
-  <p>
-    <a href="privacy.html" style="color:#00aaff;">Privacy Policy</a> ·
-    <a href="terms.html" style="color:#00aaff;">Termini di utilizzo</a> ·
-    <a href="disclaimer.html" style="color:#00aaff;">Disclaimer</a>
-  </p>
-</section>
-
     footer {
       padding: 40px 20px;
       background: #081220;
       font-size: 14px;
       opacity: 0.8;
     }
+
+    /* ===== Screenshot Gallery ===== */
+    .gallery{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:18px;
+      max-width:1100px;
+      margin:30px auto 0;
+      padding:0 20px;
+    }
+    .shot{
+      background:#081220;
+      border-radius:14px;
+      padding:14px;
+      box-shadow:0 10px 30px rgba(0,0,0,.25);
+    }
+    .shot img{
+      width:100%;
+      height:auto;
+      border-radius:12px;
+      display:block;
+    }
+    .caption{
+      margin-top:10px;
+      font-size:14px;
+      opacity:.9;
+    }
   </style>
 </head>
+
 <body>
 
 <header>
@@ -65,14 +84,16 @@
     gestisci costi, crea cartoline di navigazione
     e integra la tua strumentazione NMEA 2000.
   </p>
-  <a class="btn" href="https://play.google.com/store/apps/details?id=it.germano.diportista" target="_blank">
-  Scarica su Google Play
-</a>
-<br><br>
-<a class="btn" style="background:#555;" href="#">
-  Disponibile prossimamente su App Store
-</a>
 
+  <a class="btn" href="https://play.google.com/store/apps/details?id=it.germano.diportista" target="_blank">
+    Scarica su Google Play
+  </a>
+
+  <br><br>
+
+  <a class="btn" style="background:#555;" href="#">
+    Disponibile prossimamente su App Store
+  </a>
 </header>
 
 <section>
@@ -85,6 +106,43 @@
     ✔ Versione Premium con storico illimitato
   </p>
 </section>
+
+<section>
+  <h2>Screenshot</h2>
+
+  <div class="gallery">
+    <div class="shot">
+      <img src="1000093836.png" alt="Home">
+      <div class="caption">Home</div>
+    </div>
+
+    <div class="shot">
+      <img src="1000093837.png" alt="Nuova uscita">
+      <div class="caption">Nuova uscita</div>
+    </div>
+
+    <div class="shot">
+      <img src="1000093838.png" alt="Rifornimenti">
+      <div class="caption">Rifornimenti</div>
+    </div>
+
+    <div class="shot">
+      <img src="1000093839.png" alt="Esportazione">
+      <div class="caption">Esportazione</div>
+    </div>
+
+    <div class="shot">
+      <img src="1000093840.png" alt="Menu">
+      <div class="caption">Menu</div>
+    </div>
+
+    <div class="shot">
+      <img src="1000093841.png" alt="Impostazioni">
+      <div class="caption">Impostazioni</div>
+    </div>
+  </div>
+</section>
+
 <section>
   <h2>Documenti legali</h2>
   <p>
